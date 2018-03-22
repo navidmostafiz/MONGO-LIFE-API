@@ -1,0 +1,24 @@
+{
+  "name": "react-life",
+  "version": "1.0.0",
+  "description": "react js life cycle",
+  "main": "index.js",
+  "scripts": {
+    "start": "clear && node server.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "life",
+    "cycle"
+  ],
+  "author": "NAVID MOSTAFIZ",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "mongodb": "^3.0.4",
+    "mongoose": "^5.0.11"
+  }
+}
