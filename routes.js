@@ -7,7 +7,7 @@ console.log('* express api root route loaded');
 /* RESTful user API */
 
 //default api route
-//localhost:5000/api/
+//localhost:4000/api/
 router.get('/', (request, response, next) => {
   response.status(200).json({ message: 'RESTful web api' })
 })

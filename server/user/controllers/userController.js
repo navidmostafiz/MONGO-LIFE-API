@@ -1,12 +1,6 @@
 var User = require('../models/user');
 console.log('* express api controller loaded');
 
-// var users = [
-//     { _id: 1, firstName: 'Navid', lastName: 'Mostafiz', status: 'Active', role: 'Administrator' },
-//     { firstName: 'Mohaiminul', lastName: 'Islam', status: 'Active', role: 'User', id: 2 },
-//     { firstName: 'nafees', lastName: 'Mahbub', status: 'Active', role: 'User', id: 3 }
-// ];
-
 //get user
 module.exports.getAllUser = function (request, response, next) {
     console.log('userController.getAllUser()');
@@ -35,7 +29,7 @@ module.exports.addUser = function (request, response, next) {
 
         return response.status(201).json({
             success: true,
-            message: 'Created user!',
+            message: 'New User Created!',
             data: user,
         });
     });
