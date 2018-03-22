@@ -1,3 +1,4 @@
+//code format: ES5
 var User = require('../models/user');
 console.log('* express api controller loaded');
 

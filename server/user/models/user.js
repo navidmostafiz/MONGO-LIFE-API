@@ -1,8 +1,8 @@
+//code format: ES5
 var bcrypt = require('bcrypt-nodejs');
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-//import mongoose, { Schema } from 'mongoose';
-
+console.log('* user model & user schema loaded')
 
 // create a userSchema
 var userSchema = new Schema({
@@ -37,9 +37,8 @@ var userSchema = new Schema({
     updatedAt: Date,
 }, { versionKey: false });
 
-/*
-* userSchema middlewares
-*/
+
+// userSchema middlewares
 
 // on every save, add the date
 userSchema.pre('save', function (next) {
@@ -57,9 +56,8 @@ userSchema.pre('save', function (next) {
     next();
 });
 
-/*
- * userSchema methods
- */
+// userSchema methods
+
 
 // generating a hash
 userSchema.methods.generateHash = function (password) {
