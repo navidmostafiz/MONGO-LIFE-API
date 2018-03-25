@@ -1,19 +1,19 @@
 # MONGO-LIFE-API
-NodeJs Express Mongoose MongoDB RESTful API
+NodeJs Express Mongoose MongoDB JWT RESTful API * the entire project is in JS ES5
 
 ### :beetle: The Stack
-* NodeJs - 
-* Node Express - Restful API
-
-* MongoDB - NOSQL non-schema, non relational DB
-* Mongoose - ORM for Mongo
-* RoboT3 - Mongo visual [for developer use]
-
-* JWT (JSON Web Token) - local Auth
-* BCrypt - hashing encryption for password
-
+| FW/Lib | Description |
+| ------ | ------ |
+| * NodeJs |  [download NodeJs](https://nodejs.org/en/download/) |
+| * Node Express | Restful API |
+| * MongoDB | NOSQL non-schema, non relational DB |
+| * Mongoose | ORM for MongoDB |
+| * RoboT3 | APMongo visual [for developer use]I |
+| * JWT | (JSON Web Token) - local Auth |
+| * BCrypt | hashing encryption for password |
 
 ## :beetle: Commands
+```sh
 * START MONGODB: cmd> sudo service mongod start
 * STOP MONGODB:  cmd> sudo service mongod stop
 * RESTART MONGODB:  cmd> sudo service mongod restart
@@ -29,7 +29,7 @@ NodeJs Express Mongoose MongoDB RESTful API
 * cmd> 
 * cmd> 
 * cmd> 
-
+```
 
 ## :beetle: Build & Start the app
 * To start the server and launch api: cmd> npm run start
