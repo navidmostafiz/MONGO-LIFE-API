@@ -2,6 +2,19 @@
 var User = require('../models/user');
 console.log('* express api controller loaded');
 
+
+//get user by Credentials
+module.exports.getUserByCred = function (emailAddress, password) {
+    console.log('userController.getUserByCred(' + emailAddress + ', ' + password + ')');
+    User.findOne({ emailAddress: emailAddress })
+        .exec((err, user) => {
+            if (err) { return next(err); }
+            console.log('\t user returned: ', user);
+            if (user != null) { return user; }
+            else { return null; }
+        });
+}
+
 //get user
 module.exports.getAllUser = function (request, response, next) {
     console.log('userController.getAllUser()');
@@ -40,9 +53,9 @@ module.exports.addUser = function (request, response, next) {
 module.exports.getUserById = function (request, response, next) {
     var userId = request.params._id;
     console.log('userController.getUserById(' + userId + ')');
-    User.findById(ruserId)
-        .exec((err, user) => {
-            if (err) return next(err);
+    User.findById(userId)
+        .exec((error, user) => {
+            if (error) return next(error);
             console.log('\t user returned: ', user);
             return response.status(200).json({
                 success: true,
@@ -63,8 +76,8 @@ module.exports.updateUser = function (request, response, next) {
         user.emailAddress = request.body.emailAddress;
         user.status = request.body.status;
 
-        user.save(function (err) {
-            if (err) return next(err);
+        user.save(function (error) {
+            if (error) return next(error);
 
             return response.status(201).json({
                 success: true,

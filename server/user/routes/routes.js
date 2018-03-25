@@ -1,4 +1,5 @@
 var express = require('express');
+var { verifyToken } = require('../../auth/middleware/verifyToken')
 var userController = require('../controllers/userController');
 var userRoutes = express.Router();
 console.log('* user api root router loaded');
@@ -7,7 +8,7 @@ console.log('* user api root router loaded');
 //FOR GET & POST
 //localhost:3000/api/users/
 userRoutes.route('/')
-  .get(userController.getAllUser)
+  .get(verifyToken, userController.getAllUser)
   .post(userController.addUser);
 //.post(verifyToken, addUser);
 
