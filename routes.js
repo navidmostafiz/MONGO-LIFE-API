@@ -3,7 +3,7 @@
 var express = require('express');
 var router = express.Router();
 var userRoutes = require('./server/user/routes/routes');
-var loginRoutes = require('./server/auth/routes/routes');
+var authRoutes = require('./server/auth/routes/routes');
 console.log('* express api root route loaded');
 /* RESTful user API */
 
@@ -15,8 +15,7 @@ router.get('/', (request, response, next) => {
 
 //localhost:3000/api/users/
 router.use('/users', userRoutes);
-
 //localhost:3000/api/login/
-router.use('/login', loginRoutes);
+router.use('/login', authRoutes);
 
 module.exports = router

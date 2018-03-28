@@ -1,16 +1,18 @@
-# MONGO-LIFE-API
+# MONGO-LIFE-API 🚶
 NodeJs Express Mongoose MongoDB JWT RESTful API * the entire project is in JS ES5
 
-### :beetle: The Stack
-| FW/Lib | Description |
-| ------ | ------ |
-| * NodeJs |  [download NodeJs](https://nodejs.org/en/download/) |
-| * Node Express | Restful API |
-| * MongoDB | NOSQL non-schema, non relational DB |
-| * Mongoose | ORM for MongoDB |
-| * RoboT3 | APMongo visual [for developer use]I |
-| * JWT | (JSON Web Token) - local Auth |
-| * BCrypt | hashing encryption for password |
+
+## :beetle: The Stack
+| FW/Lib         | Description                                        |
+| -------------- | -------------------------------------------------- |
+| * **NodeJs**       | [download NodeJs](https://nodejs.org/en/download/) |
+| * Node Express | Restful API                                        |
+| * MongoDB      | NOSQL non-schema, non relational DB                |
+| * Mongoose     | ORM for MongoDB                                    |
+| * RoboT3       | APMongo visual [for developer use]I                |
+| * JWT          | (JSON Web Token) - local Auth                      |
+| * BCrypt       | hashing encryption for password                    |
+
 
 ## :beetle: Commands
 ```sh
@@ -32,7 +34,10 @@ NodeJs Express Mongoose MongoDB JWT RESTful API * the entire project is in JS ES
 ```
 
 ## :beetle: Build & Start the app
-* To start the server and launch api: cmd> npm run start
+* To start the server and launch api:
+```sh
+cmd> npm run start
+```
 
 ## :beetle: Authors
 **Navid Mostafiz**

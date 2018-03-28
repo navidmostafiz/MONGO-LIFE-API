@@ -8,8 +8,7 @@ console.log('* express app loaded');
 
 //json persing middleware
 app.use(bodyParser.json());
-
-//cross-server
+//cross-server middleware
 app.use(cors());
 
 //Set up default mongoose connection

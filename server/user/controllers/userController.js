@@ -7,8 +7,8 @@ console.log('* express api controller loaded');
 module.exports.getUserByCred = function (emailAddress, password) {
     console.log('userController.getUserByCred(' + emailAddress + ', ' + password + ')');
     User.findOne({ emailAddress: emailAddress })
-        .exec((err, user) => {
-            if (err) { return next(err); }
+        .exec((error, user) => {
+            if (error) { return null;  }
             console.log('\t user returned: ', user);
             if (user != null) { return user; }
             else { return null; }

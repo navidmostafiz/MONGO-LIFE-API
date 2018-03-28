@@ -43,5 +43,10 @@ module.exports.getTokenByCred = function (request, response, next) {
             token
         });
     }
-    else { response.sendStatus(403); }
+    else {
+        return response.status(200).json({
+            success: false,
+            message: 'invalid user name or password',
+        });
+    }
 }
