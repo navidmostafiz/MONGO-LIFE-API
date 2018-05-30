@@ -5,13 +5,13 @@ NodeJs Express Mongoose MongoDB JWT RESTful API * the entire project is in JS ES
 ## :beetle: The Stack
 | FW/Lib         | Description                                        |
 | -------------- | -------------------------------------------------- |
-| * **NodeJs**       | [download NodeJs](https://nodejs.org/en/download/) |
-| * Node Express | Restful API                                        |
-| * MongoDB      | NOSQL non-schema, non relational DB                |
-| * Mongoose     | ORM for MongoDB                                    |
-| * RoboT3       | APMongo visual [for developer use]I                |
-| * JWT          | (JSON Web Token) - local Auth                      |
-| * BCrypt       | hashing encryption for password                    |
+| :large_blue_circle: **NodeJs**       | [download NodeJs](https://nodejs.org/en/download/) |
+| :large_blue_circle: Node Express | Restful API                                        |
+| :large_blue_circle: MongoDB      | NOSQL non-schema, non relational DB                |
+| :large_blue_circle: Mongoose     | ORM for MongoDB                                    |
+| :large_blue_circle: RoboT3       | APMongo visual [for developer use]I                |
+| :large_blue_circle: JWT          | (JSON Web Token) - local Auth                      |
+| :large_blue_circle: BCrypt       | hashing encryption for password                    |
 
 
 ## :beetle: How to clone this project?
